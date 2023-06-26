@@ -1,0 +1,81 @@
+[
+	{
+		"pathImg": "./img/1.jpg",
+		"rating": 7.8,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Новинки 2023",
+			"Рекомендации",
+			"Лучшее"
+		]
+	},
+	{
+		"pathImg": "./img/2.jpg",
+		"rating": 7.9,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Новинки 2023"
+		]
+	},
+	{
+		"pathImg": "./img/3.jpg",
+		"rating": 7.9,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Рекомендации",
+			"Лучшее"
+		]
+	},
+	{
+		"pathImg": "./img/4.jpg",
+		"rating": 7.9,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Рекомендации"
+		]
+	},
+	{
+		"pathImg": "./img/5.jpg",
+		"rating": 7.9,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Новинки 2023",
+			"Рекомендации",
+			"Лучшее"
+		]
+	},
+	{
+		"pathImg": "./img/6.jpg",
+		"rating": 7.9,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Новинки 2023",
+			"Рекомендации",
+			"Лучшее"
+		]
+	},
+	{
+		"pathImg": "./img/7.jpg",
+		"rating": 7.9,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Рекомендации"
+		]
+	},
+	{
+		"pathImg": "./img/8.jpg",
+		"rating": 7.9,
+		"subscription": true,
+		"top10": false,
+		"category": [
+			"Лучшее"
+		]
+	}
+]
