@@ -12,7 +12,6 @@ private:
 	map<string, string> getFields(string str) {
 		map<string, string> array;
 
-		cout << str.length() << endl;
 		for (int i = 0, k = 0; i < str.length(); i++) {
 			if (str[i] == '"') {
 				string key = "";
@@ -81,8 +80,9 @@ private:
 	void loadField(map<string, string> array) {
 
 		//запись
-		array["pathImg"] = pathImg;
+		pathImg = array["pathImg"];
 		rating = stof(array["rating"]);
+
 		if (array["subscription"] == "true") {
 			subscription = 1;
 		}
@@ -102,31 +102,48 @@ private:
 				continue;
 			}
 			bufStr += array["category"][i];
-
-
-
-
 		}
 		cout << endl;
 
 	}
 public:
+	Cinema() {
+
+	}
 	Cinema(string str) {
 		map<string, string> array = getFields(str);
 		loadField(array);
-		for (const auto& el : array) {
-			cout << el.first << ": " << el.second << endl;
-		}
+		//for (const auto& el : array) {
+		//	cout << el.first << ": " << el.second << endl;
+		//}
 	}
 	void showInfo() {
-		cout << "path: " << pathImg << endl;
+		cout << "pathImg: " << pathImg << endl;
 		cout << "rating: " << rating << endl;
 		cout << "subs: " << subscription << endl;
 		cout << "top10: " << top10 << endl;
 		cout << "category: ";
 		for (auto el : category) {
-			cout << el << " ";
+			cout << el << ",";
 		}
 		cout << endl;
 	}
 };
+class Theater {
+private:
+	 vector<Cinema> cinemas;
+
+public:
+
+	void addCinema(string str) {
+		cinemas.push_back(Cinema(str));
+	}
+
+	void showAllCinemas() {
+		for (Cinema& cinema : cinemas) {
+			cinema.showInfo();
+			 cout << "---------------------" <<  endl;
+		}
+	}
+};
+

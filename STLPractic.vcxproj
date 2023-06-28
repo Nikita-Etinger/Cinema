@@ -143,10 +143,8 @@
     <ClCompile Include="STLPractic.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cinema.json" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Cinema.h" />
+    <ClInclude Include="JsonReader.h" />
     <ClInclude Include="Param.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
